@@ -13,7 +13,7 @@ namespace robo_test
         static void Main(string[] args)
         {
             var get = new Get();
-            get.GetMethods(@"C:\Users\Admin\source\repos\robo_test\bin\Debug\dll\");
+            get.GetMethods(@"dll\");
 
             Console.ReadKey();
         }
