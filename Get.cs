@@ -10,7 +10,8 @@ namespace robo_test
 {
     public class Get
     {
-        public void GetMethods(string path) {
+        public void GetMethods(string path)
+        {
 
             string[] dllFiles = Directory.GetFiles(path, "*.dll");
             foreach (var dllFile in dllFiles)
@@ -21,13 +22,10 @@ namespace robo_test
                 {
                     Type myType = asm.GetType(item.ToString());
                     Console.WriteLine(item.ToString());
-                    foreach (MemberInfo mi in myType.GetMembers(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly))
+                    foreach (MethodInfo mi in myType.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly | BindingFlags.NonPublic))
                     {
-                        Console.WriteLine($"- {mi.Name}");
-                    }
-                    foreach (MemberInfo mi in myType.GetMembers(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly))
-                    {
-                        Console.WriteLine($"- {mi.Name}");
+                        if (mi.IsFamily || mi.IsPublic)
+                            Console.WriteLine($"- {mi.Name}");
                     }
                 }
             }
