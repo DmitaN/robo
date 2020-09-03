@@ -1,0 +1,6 @@
+C:\Users\Admin\source\repos\robo_test\bin\Debug\robo_test.exe.config
+C:\Users\Admin\source\repos\robo_test\bin\Debug\robo_test.exe
+C:\Users\Admin\source\repos\robo_test\bin\Debug\robo_test.pdb
+C:\Users\Admin\source\repos\robo_test\obj\Debug\robo_test.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\robo_test\obj\Debug\robo_test.exe
+C:\Users\Admin\source\repos\robo_test\obj\Debug\robo_test.pdb
