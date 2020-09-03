@@ -12,7 +12,6 @@ namespace robo_test
     {
         public void GetMethods(string path)
         {
-
             string[] dllFiles = Directory.GetFiles(path, "*.dll");
             foreach (var dllFile in dllFiles)
             {
